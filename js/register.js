@@ -18,5 +18,6 @@ function register(){
     else if((pOne==pTwo)&&checked==true){
         console.log("all good!")
         document.getElementById("error").innerHTML = " ";
+        document.getElementById("errorTwo").innerHTML = " ";
     }
 }
