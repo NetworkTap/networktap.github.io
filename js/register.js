@@ -26,5 +26,6 @@ function register(){
                 document.getElementById(fireError).innerHTML = errorMessage;
             }
         });
+        window.location.assign("../html/profile.html");
     }
 }
