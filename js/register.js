@@ -19,5 +19,12 @@ function register(){
         console.log("all good!")
         document.getElementById("error").innerHTML = " ";
         document.getElementById("errorTwo").innerHTML = " ";
+        firebase.auth().createUserWithEmailAndPassword(email, pOne).catch(function(error) {
+            if(error){
+                var errorCode = error.code;
+                var errorMessage = error.message;
+                document.getElementById(fireError).innerHTML = errorMessage;
+            }
+        });
     }
 }
