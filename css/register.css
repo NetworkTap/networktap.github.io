@@ -1,0 +1,26 @@
+
+div.well{
+  height: 250px;
+} 
+
+.Absolute-Center {
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.Absolute-Center.is-Responsive {
+  width: 50%; 
+  height: 60%;
+  min-width: 200px;
+  max-width: 400px;
+  padding: 0px;
+}
+
+#logo-container{
+  margin: auto;
+  margin-bottom: 10px;
+  width:330;
+  height:330;
+  background-image:url('../res/img/logo.png');
+}

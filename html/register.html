@@ -4,17 +4,60 @@
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../css/register.css"><link>
+        <script src="../js/register.js"></script>
         <title>Log In</title>
     </head>
     <!--Navbar-->
     <body>
-        <nav class="navbar navbar-dark bg-primary">
+        <nav id="nav" class="navbar navbar-dark bg-primary">
             <a class="navbar-brand" href="../index.html">
                 <img src="../res/img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
                 NetworkTap
             </a>
         </nav>
     <!--Form-->
-        
+    <center>
+        <h1>Register For a New Account</h1>
+        <form><div class="container">
+            <div class="row">
+                <div class="Absolute-Center is-Responsive">
+                <div class="col-sm-12 col-md-10 col-md-offset-1">
+                    <form action="" id="loginForm">
+                    <div class="form-group input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                        <input class="form-control" type="text" name='email' id='email' placeholder="email"/>          
+                    </div>
+                    <div class="form-group input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                        <input class="form-control" type="password" name='password' id='password' placeholder="password"/>     
+                    </div>
+                    <div class="form-group input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                        <input class="form-control" type="password" name='confirm_password' id='confirm_password' placeholder="confirm password"/>     
+                    </div>
+                    <p id="error" style="color:red;"></p>
+                    <p id="errorTwo" style="color:red;"></p>
+                    <div class="checkbox">
+                        <label>
+                        <input type="checkbox" id="agree"> I agree to the <a href="#">Terms and Conditions</a>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <button type="button" class="btn btn-def btn-block" onclick="register()">Register</button>
+                    </div>
+                    <label>
+                        Already have an account? <a href="login.html">Login here</a>!
+                        </label>
+                    <div class="form-group text-center">
+                        <a href="#">Forgot Password</a>&nbsp;|&nbsp;<a href="#">Support</a>
+                    </div>
+                    </form>        
+                </div>  
+                </div>    
+            </div>
+            </div>
+        </form>
+    </center>
     </body>
 </html>
