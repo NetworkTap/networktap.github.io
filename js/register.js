@@ -27,5 +27,8 @@ function register(){
             }
         });
         window.location.assign("../html/profile.html");
+        console.log("on new page");
+        console.log(email);
+        console.log(pOne);
     }
 }
