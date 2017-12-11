@@ -13,18 +13,12 @@ function login(){
         document.getElementById("error").innerHTML = errorMessage;
         loginDone=false;
     }
-    else{
+    });
+    if(loginDone){
         document.getElementById("error").innerHTML = " ";
         console.log("logged in");
         window.location.assign("../html/profile.html");
     }
-    if(loginDone){
-    document.getElementById("error").innerHTML = " ";
-    console.log("logged in");
-    window.location.assign("../html/profile.html");
-    }
-    
-    });
 }
 function testFunc(){
     console.log("js is working");
